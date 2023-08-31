@@ -8,18 +8,19 @@ import random
 import sys
 import traceback
 import string
+from eth_account import Account as EthereumAccount
 
 from config import *
 from modules import *
 
 def mint_name(private_key):
 	web3 = Web3(Web3.HTTPProvider(zksync_rpc))
-	account = web3.eth.account.privateKeyToAccount(private_key)
+	account = EthereumAccount.from_key(private_key)
 	my_address = account.address
 	print(my_address)
 	now = datetime.datetime.now()
 	now_dt = now.strftime("%d-%m-%Y %H:%M")
-	contract = web3.eth.contract(Web3.toChecksumAddress(contract_address), abi=abi_json)
+	contract = web3.eth.contract(Web3.to_checksum_address(contract_address), abi=abi_json)
 	gas_price = int(web3.eth.gas_price*1.05)
 
 	name = get_name()
