@@ -1,0 +1,44 @@
+[
+	{
+	  "constant": true,
+	  "inputs": [
+		{
+		  "name": "_inputString",
+		  "type": "string"
+		}
+	  ],
+	  "name": "available",
+	  "outputs": [
+		{
+		  "name": "",
+		  "type": "bool"
+		}
+	  ],
+	  "payable": false,
+	  "stateMutability": "view",
+	  "type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+		  {
+			"name": "name",
+			"type": "string"
+		  },
+		  {
+			"name": "owner",
+			"type": "address"
+		  },
+		  {
+			"name": "yearCount",
+			"type": "uint256"
+		  }
+		],
+		"name": "register",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	  }
+  ]
+  
