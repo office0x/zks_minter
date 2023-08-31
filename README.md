@@ -1,4 +1,4 @@
-## zns_minter
+## zks_minter
 This script registers domain names from https://zks.network/ on the zksync network. It's an additional contract for your accounts. The minting commission is around 30 cents.
 
 # installation
