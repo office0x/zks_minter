@@ -7,16 +7,18 @@ Before you can start minting your NFTs, you'll need to install the required depe
 
 ```bash
 pip install -r requirements.txt
+```
+
 
 # config
+
 Place your private keys in private_keys.txt and domain names in names.txt.
 Configure settings in the config.py file.
 
 # execution
 
-
 ```python
 python3 minter.py
-
+```
 
 
